@@ -1,0 +1,18 @@
+.navbar {
+  font-family: 'Nordea Sans Small Web Light', Fallback, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #00075A;
+
+}
+
+.merchant-name {
+  font-size: 14px;
+  font-weight: 100;
+  color: #00075A;
+
+}
