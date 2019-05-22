@@ -1,6 +1,6 @@
 
 .dropdown {
-    width: 440px;
+    min-width: 220px;
     position: relative;
     color: #8B8A8D;
   }
@@ -10,10 +10,10 @@
     border-right: 1px solid #dddad6;
     border-bottom: 1px solid #dddad6;
     display: block;
-    padding: .500em;
+    padding: .400em;
     z-index: 2;
-    background: #F3F3F3;;
-    color: #C9C7C7;
+    /* background: #F3F3F3;;
+    color: #C9C7C7; */
     position: relative;
     border-radius: 2px;
 
@@ -136,13 +136,13 @@
   /* Font awesome */
   .fa-chevron-down, .fa-chevron-up {
     background: #F4F2F1;
-    padding: 10px;
+    padding: 8px;
     position: relative;
     top: 2px;
   }
   .fa-chevron-disabled {
     background: rgba(230,228,227,0.5);
-    padding: 10px;
+    padding: 8px;
     position: relative;
     top: 2px;
   }

@@ -49,7 +49,7 @@
                         <span class="nav-item">Dashboard</span>
                     </li>
                 </ul>
-                <small>Setting up</small>
+                <small class="sidebar-section">Setting up</small>
                 <ul>
                     <li>
                         <img src="imgs/integration.png" class="icon" alt="integration" />
@@ -63,7 +63,7 @@
                         <span class="nav-item">3D secure/fraud</span>
                     </li>
                 </ul>
-                <small>General</small>
+                <small class="sidebar-section">General</small>
                 <ul>
                     <li>
                         <img src="imgs/transactions.png" class="icon" alt="transactions"/>
@@ -82,7 +82,7 @@
                         <span class="nav-item">Audit log</span>
                     </li>
                 </ul>
-                <small>Data requests</small>
+                <small class="sidebar-section">Data requests</small>
                 <ul>
                     <li>
                         <span class="icon-none"></span>
@@ -94,7 +94,7 @@
                     </li>
         
                 </ul>
-                <small>Interface</small>
+                <small class="sidebar-section">Interface</small>
                 <ul>
                     <li>
                         <span class="icon-none"></span>
@@ -106,7 +106,7 @@
                     </li>
         
                 </ul>
-                <small>Help</small>
+                <small class="sidebar-section">Help</small>
                 <ul>
                     <li>
                         <span class="icon-none"></span>
@@ -139,8 +139,129 @@
                 </nav>
                     <h1>Transactions</h1>
                     <!-- Transaction details -->
-                    <div class="card card-plan col-lg-12" >
-                        <div class="card-body row">
+                    <div class="card card-plan col-lg-12 pt-3" >
+                        <div class="row col-lg-12">
+                            <div class="form-group col-lg-3">
+                                <label htmlFor="filter"><small>Type of time filter</small></label>
+                                <div class="dropdown">
+                                    <span>Show absolute time
+                                        <i class="fa fa-chevron-down down"></i>
+                                    </span>
+                                </div>                    
+                            </div> 
+                            
+                            <div class="form-group col-lg-3 ">
+                                <label htmlFor="date"><small>From</small></label>
+                                <input type="date" class="form-control" placeholder="date" required />
+                            </div>   
+                            <div class="form-group col-lg-3 ">
+                                <label htmlFor="date"><small>To</small></label>
+                                <input type="date" class="form-control" placeholder="date" required />
+                            </div>  
+                            
+                            <div class="form-group col-lg-3 my-4">
+                                <span class="nav-item">Filter options</span>
+                                <span class="container-down"><span class="triangle-down"></span></span>
+                                
+                            </div> 
+                            <div class="form-group col-lg-3 my-4">
+                                <span class="nav-item">Filter options</span>
+                                <span class="container-up"><span class="triangle-up"></span></span>
+                            </div>             
+                        </div> 
+
+                        <div class="row col-lg-12 mx-auto">
+                           
+                            <div class="form-group col-lg-3">
+                                <h6 class="card-title">Transaction status</h6>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Pending / 3DS Pending
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Approved
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Authorized
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Declined
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Failed
+                                    <span class="checkmark"></span>
+                                </label>  
+                            </div>
+                           
+                            <div class="form-group col-lg-3">
+                                <h6 class="card-title">Transaction type</h6>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Card
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Stored card
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Recurring
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Invoice
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Manual Invoice
+                                    <span class="checkmark"></span>
+                                </label>  
+                            </div> 
+                            <div class="form-group col-lg-3">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Bank
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Swish
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">Vipps
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">PayPal
+                                    <span class="checkmark"></span>
+                                </label>
+                                 
+                            </div>        
+                        </div> 
+                        
+                        <div class="row col-lg-12 mx-auto">
+                            <div class="form-group col-lg-6">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox">Keep filter state after page reload
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div> 
+                            <div class="form-group col-lg-6">
+                                <input type="submit" class="btn-reset" value="Reset" />             
+                                <input type="submit" class="btn-update" value="Update" />  
+                            </div>
+                        </div> 
+  
+                        <div class="card-body row table-container">
+                            <div class=" col-lg-3">
+                                <span class="icon-none"></span>
+                                <span class="ml-1 card-title">Search transactions</span>
+                            </div>
+                            <div class=" col-lg-3">
+                                <span class="icon-none"></span>
+                                <span class="ml-1 card-title">Export Excel</span>
+                            </div> 
                             <table class="table my-5">
                                 <thead class="thead-light">
                                     <tr>
@@ -212,7 +333,43 @@
                             </dv>  
                         </div> 
                     </div>   
-                               
+                    <div class="col-lg-5" >
+                        <div class="card card-custom-modal">
+                            <h5 class="card-header">Search transactions</h5>
+                            <a href="#" class="close-light"></a>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label htmlFor="idequals"><small>Search condition</small></label>
+                                    <div class="dropdown dropdown-modal">
+                                        <span class="select">Select 
+                                            <i class="fa fa-chevron-down down"></i>
+                                        </span>
+                                    </div>                    
+                                </div>
+                                <div class="form-group">
+                                    <label htmlFor="idequals"><small>ID equals</small></label>
+                                    <input type="number" class="form-control" placeholder="0" required />
+                                </div> 
+                                <div class="form-group">
+                                    <label htmlFor="time"><small>Time</small></label>
+                                    <input type="number" class="form-control" placeholder="0" required />
+                                </div> 
+                                <p class="card-title ml-1">Search within interval</p>
+                
+                                <div class="form-group">
+                                    <label htmlFor="anyFieldContaining"><small>Any field containing</small></label>
+                                    <input type="text" class="form-control" placeholder="0" required />
+                                </div> 
+                                <div class="form-group">
+                                    <label htmlFor="showResults"><small>Show results</small></label>
+                                    <input type="number" class="form-control" placeholder="0" required />
+                                </div> 
+                                <div class="card-body mx-5">
+                                    <input type="submit" class="btn btn-update" value="Search transaction" />                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>              
             </div>
         </div>
       </div>

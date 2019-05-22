@@ -1,11 +1,47 @@
-.btn-create:hover {
+
+.btn-reset {
+    background: #fff;
+    color:#00075A;
+    border-radius: 40px;
+    border: none;
+    margin: 10px;
+    padding: 8px 30px;
+    position: relative;
+    top: calc(100% - 48px);
+}
+
+.btn-reset:hover {
     background: #e5f2ff;
     color: #8DB8E8;
     cursor: pointer;     
 
-  }
+}
   
-  .btn:disabled {
+.btn-reset:disabled {
     background: #B2B3CC;
     color: #E8E8EF;
-  }
+}
+
+
+.btn-update {
+    background: #00075A;
+    color:#fff;
+    border-radius: 40px;
+    border: none;
+    margin: 10px;
+    padding: 8px 30px;
+    position: relative;
+    top: calc(100% - 48px);
+}
+
+.btn-update:hover {
+    background: #e5f2ff;
+    color: #8DB8E8;
+    cursor: pointer;     
+
+}
+  
+.btn-update:disabled {
+    background: #B2B3CC;
+    color: #E8E8EF;
+}
