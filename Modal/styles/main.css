@@ -1,0 +1,17 @@
+.card {
+  border-radius: 10px;
+ 
+  border: none;
+  box-shadow: none;
+}
+
+.card-header {
+ 
+  background: #00075A;
+  color:#fff;
+}
+
+.card-header:first-child {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
