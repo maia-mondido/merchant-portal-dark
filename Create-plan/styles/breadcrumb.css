@@ -1,5 +1,5 @@
 .breadcrumb  {
-    background: transparent;
+  background: transparent;
 
 }
 
@@ -21,9 +21,9 @@
 }
 
 .arr-right .breadcrumb-item+.breadcrumb-item::before {
-    /* content: "›";    */
-    content: ""; 
-    /* font-size:32px;
-    font-weight: 50;
-    line-height:18px;    */
+  /* content: "›";    */
+  content: ""; 
+  /* font-size:32px;
+  font-weight: 50;
+  line-height:18px;    */
 }

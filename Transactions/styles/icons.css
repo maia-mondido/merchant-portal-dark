@@ -23,6 +23,29 @@
   border-bottom: 1px solid #00075A;
 }
 
+.container-up {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+}
+
+.triangle-up {
+  position: absolute;
+  margin: auto;
+  top: 1px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  border-right: 1px solid #00075A;
+  border-bottom: 1px solid #00075A;
+}
+
 
 .container-left {
   width: 9px;

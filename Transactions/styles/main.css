@@ -51,6 +51,15 @@
   border-top-left-radius: 10px;
 }
 
+.filter-down {
+  position: relative;
+  top: 35px;
+}
+
+.btn-group {
+  position: relative;
+  top: -35px;
+}
 
 
 .currency {
@@ -101,6 +110,10 @@ input[type="date"] {
   margin: 0 5px;
   border-top: 1px solid #ccc;
 
+}
+
+.table .thead-light th {
+  background: #E3E3E3;
 }
 
 .pagination li a {
